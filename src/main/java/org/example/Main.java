@@ -9,8 +9,8 @@ public class Main {
 
         final State state = new State(PrinterType.ODD);
 
-        final Printer oddPrinter = new Printer(1, 2, 50, PrinterType.ODD, PrinterType.EVEN, state);
-        final Printer evenPrinter = new Printer(2, 2, 50, PrinterType.EVEN, PrinterType.ODD, state);
+        final Printer oddPrinter = new Printer(1, 2, 10, PrinterType.ODD, PrinterType.EVEN, state);
+        final Printer evenPrinter = new Printer(2, 2, 10, PrinterType.EVEN, PrinterType.ODD, state);
 
         final Thread oddThread = new Thread(oddPrinter);
         final Thread evenThread = new Thread(evenPrinter);
